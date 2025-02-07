@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats du Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body >
+    <div class="d-flex flex-column justify-content-center align-items-center text-center">
+        <h3 id="user-name"><b> Bonjour <u><span id="username">Utilisateur</span></u> ! </b></h3> 
+       
+        <div class="d-flex flex-row">
+
+            <table class="table text-center">
+                <tr>
+                    <th>Question</th>
+                    <th>Note</th>
+                </tr>
+                <tbody id="results-table">
+                    <!-- Les résultats des questions seront insérés ici dynamiquement -->
+                </tbody>
+                <tr>
+                    <th>Total</th>
+                    <th id="total-score"></th>
+                </tr>
+            </table>
+
+            <div class="d-flex flex-column align-items-center mt-4">
+                <img id="image-panneau" src="" alt="Panneau de signalisation" class="img-fluid" style="max-width: 300px; display: none;">
+                <div id="details-question" class="text-center mt-2" style="display: none;">
+                    <p id="categorie-question" ></p>
+                    <p id="description-question"  ></p>
+                </div>
+            </div>
+        </div>
+        <a href="start.html" class="btn btn-primary">Réessayer</a>
+
+    </div>   
+   
+    
+    
+
+    <script src="script.js"> </script>
+
+</body>
+
+</html>
